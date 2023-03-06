@@ -5,7 +5,6 @@ on:
     branches:
       - test
 
-jobs:
   runs-on: ubuntu-latest
 
   strategy:
