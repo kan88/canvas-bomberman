@@ -23,7 +23,7 @@ jobs:
 #           ssh-keyscan -H "$IP" >>~/.ssh/known_hosts
 #         env:
 #           IP: ${{ secrets.IP }}
-      - name: Deploy to server
+      - name: Deploy
         uses: easingthemes/ssh-deploy@v2.1.5
     env:
       SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
