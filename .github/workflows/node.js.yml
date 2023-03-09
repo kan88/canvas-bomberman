@@ -24,6 +24,7 @@ jobs:
       - name: Deploy to server
         uses: easingthemes/ssh-deploy@v2.1.5
     env:
+      SCRIPT_BEFORE: ls
       SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
       ARGS: "-rltgoDzv0 --delete"
       SOURCE: "dist/"
